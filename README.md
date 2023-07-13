@@ -28,9 +28,9 @@
 
 ## 论文阅读
 
-- [Communication-efficient learning of deep networks from decentralized data(最经典的联邦学习论文)](./论文总结/联邦学习最经典的论文.html)<img src="https://cdn.jsdelivr.net/gh/LFool/image-hosting@master/20220119/05043716425398771642539877247kvVIXA.svg"/>
+- [Communication-efficient learning of deep networks from decentralized data(最经典的联邦学习论文)](./论文总结/联邦学习最经典的论文.html)
 
-
+- [Federated Learning with Privacy-preserving and Model IP-right-protection](./论文总结/Federated Learning with Privacy-preserving and Model IP-right-protection.html)<img src="https://cdn.jsdelivr.net/gh/LFool/image-hosting@master/20220119/05043716425398771642539877247kvVIXA.svg"/>
 
 ------
 
@@ -49,6 +49,8 @@
 - [一题学会如何处理矩阵9宫格求和等处理问题](./Leetcode总结/数据结构类型题目/289生命问题矩阵8宫格解法.html)
 
 - [下一个更大元素类问题理解](./Leetcode总结/数据结构类型题目/496%20232.html)
+
+
 
 ------
 

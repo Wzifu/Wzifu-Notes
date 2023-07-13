@@ -205,6 +205,87 @@ mark .md-meta { color: rgb(0, 0, 0); }
 mjx-container { break-inside: avoid; }
 
 
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: none !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; inset: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
 /*快速自定义配置*/
 :root {
     --monospace:  "Fira Code","Cascadia Code", HYZhengYuan,Menlo, "Ubuntu Mono",JetBrainsMonoNL-Regular Consolas; /*代码字体*/
@@ -1367,9 +1448,9 @@ a.ty-link {
 
 
 
-</style><title>README</title>
+</style><title>Collections类操作</title>
 </head>
 <body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><h1 id='个人笔记'><span>个人笔记</span></h1><h2 id='java'><span>Java</span></h2><h3 id='基础'><span>基础：</span></h3><ul><li><p><a href='./java/java常用操作总结.html'><strong><span>java常用操作总结</span></strong></a></p></li></ul><hr /><h2 id='python'><span>Python </span></h2><ul><li><p><a href='./python/Python常用操作总结.html'><span>Python常用操作总结</span></a></p></li></ul><hr /><h2 id='联邦学习'><span>联邦学习：</span></h2><ul><li><p><a href='https://wzifu.github.io/Wzifu-Notes/%E8%81%94%E9%82%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A01.html'><span>并行计算与机器学习1</span></a></p></li><li><p><a href='https://wzifu.github.io/Wzifu-Notes/%E8%81%94%E9%82%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A02.html'><span>并行计算与机器学习1</span></a></p></li><li><p><a href='https://wzifu.github.io/Wzifu-Notes/%E8%81%94%E9%82%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/%E8%81%94%E9%82%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%8A%80%E6%9C%AF%E7%90%86%E8%A7%A3.html'><span>联邦学习的技术理解</span></a></p></li><li><p><a href='https://wzifu.github.io/Wzifu-Notes/%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/%E8%81%94%E9%82%A6%E5%AD%A6%E4%B9%A0%E7%BB%BC%E8%BF%B0%E7%AC%94%E8%AE%B0.html'><span>论文综述阅读</span></a></p></li></ul><hr /><h2 id='论文阅读'><span>论文阅读</span></h2><ul><li><p><a href='./论文总结/联邦学习最经典的论文.html'><span>Communication-efficient learning of deep networks from decentralized data(最经典的联邦学习论文)</span></a></p></li></ul><ul><li><p><a href='./论文总结/Federated Learning with Privacy-preserving and Model IP-right-protection.html'><span>Federated Learning with Privacy-preserving and Model IP-right-protection</span></a><img src="https://cdn.jsdelivr.net/gh/LFool/image-hosting@master/20220119/05043716425398771642539877247kvVIXA.svg"/></p></li></ul><hr /><h2 id='算法'><span>算法</span></h2><p><strong><span>刷题技巧：</span></strong><a href='./Leetcode总结/刷题技巧和顺序.html'><span>刷题技巧和顺序记录</span></a></p><p>&nbsp;</p><h3 id='数据结构❤️🔥'><span>数据结构❤️‍🔥</span></h3><ul><li><p><a href='./Leetcode总结/数据结构类型题目/哈希表Hash.html'><span>Hash章节基础题整理</span></a></p></li><li><p><a href='./Leetcode总结/数据结构类型题目/215%20数组中第K最大元素.html'><span>数组中第K个最大元素（建堆面试题）</span></a></p></li><li><p><a href='./Leetcode总结/数据结构类型题目/289生命问题矩阵8宫格解法.html'><span>一题学会如何处理矩阵9宫格求和等处理问题</span></a></p></li><li><p><a href='./Leetcode总结/数据结构类型题目/496%20232.html'><span>下一个更大元素类问题理解</span></a></p></li></ul><p>&nbsp;</p><hr /><h2 id='杂项'><span>杂项</span></h2><ul><li><p><a href='./综合总结/Git总结.html'><span>Git常用命令</span></a></p></li><li><p><a href='./综合总结/Typora.html'><span>Typora &amp; Markdown &amp; Latex语法</span></a></p></li></ul></div></div>
+<div id='write'  class=''><h1 id='collections类操作集合详解'><span>Collections类操作集合详解</span></h1><blockquote><p><span>Collections是机和算法，由Collection集合框架定义，具体的可以查阅Collection.</span></p><p><span>Collections 类是 </span><a href='http://c.biancheng.net/java/'><span>Java</span></a><span> 提供的一个操作 Set、List 和 Map 等集合的工具类。Collections 类提供了许多操作集合的静态方法，借助这些静态方法可以实现集合元素的排序、查找替换和复制等操作。下面介绍 Collections 类中操作集合的常用方法。</span></p></blockquote><h2 id='排序正向和逆向）'><span>排序（正向和逆向）</span></h2><p><strong><span>Collections 提供了如下方法用于对 List 集合元素进行排序。</span></strong></p><ul><li><p><code>void reverse(List list)</code><span>：对指定 List 集合元素进行逆向排序。</span></p></li><li><p><code>void shuffle(List list)</code><span>：对 List 集合元素进行随机排序（shuffle 方法模拟了“洗牌”动作）。</span></p></li><li><p><code>void sort(List list)</code><span>：根据元素的自然顺序对指定 List 集合的元素按升序进行排序。</span></p></li><li><p><font color='orange'><code>void sort(List list, Comparator c)</code></font><span>：根据指定 Comparator 产生的顺序对 List 集合元素进行排序。</span></p></li></ul><blockquote><p><span>也就是这里彻底弄懂了，刷题时候很多要自己定义排序，为什么可以这么写的原因。</span></p></blockquote><ul><li><p><code>void swap(List list, int i, int j)</code><span>：将指定 List 集合中的 i 处元素和 j 处元素进行交换。</span></p></li><li><p><code>void rotate(List list, int distance)</code><span>：当 distance 为正数时，将 list 集合的后 distance 个元素“整体”移到前面；当 distance 为负数时，将 list 集合的前 distance 个元素“整体”移到后面。该方法不会改变集合的长度。</span></p></li></ul><h2 id='查找替换操作'><span>查找、替换操作</span></h2><p><strong><span>Collections 还提供了如下常用的用于查找、替换集合元素的方法。</span></strong></p><ul><li><p><code>int binarySearch(List list, Object key)</code><span>：使用二分搜索法搜索指定的 List 集合，以获得指定对象在 List 集合中的索引。如果要使该方法可以正常工作，则必须保证 List 中的元素已经处于有序状态。</span></p></li><li><p><code>Object max(Collection coll)</code><span>：根据元素的自然顺序，返回给定集合中的最大元素。</span></p></li><li><p><code>Object max(Collection coll, Comparator comp)</code><span>：根据 Comparator 指定的顺序，返回给定集合中的最大元素。</span></p></li><li><p><code>Object min(Collection coll)</code><span>：根据元素的自然顺序，返回给定集合中的最小元素。</span></p></li><li><p><code>Object min(Collection coll, Comparator comp)</code><span>：根据 Comparator 指定的顺序，返回给定集合中的最小元素。</span></p></li><li><p><code>void fill(List list, Object obj)</code><span>：使用指定元素 obj 替换指定 List 集合中的所有元素。</span></p></li><li><p><code>int frequency(Collection c, Object o)：</code><span>返回指定集合中指定元素的出现次数。</span></p></li><li><p><code>int indexOfSubList(List source, List target)：</code><span>返回子 List 对象在父 List 对象中第一次出现的位置索引；如果父 List 中没有出现这样的子 List，则返回 -1。</span></p></li><li><p><code>int lastIndexOfSubList(List source, List target)：</code><span>返回子 List 对象在父 List 对象中最后一次出现的位置索引；如果父 List 中没有岀现这样的子 List，则返回 -1。</span></p></li><li><p><code>boolean replaceAll(List list, Object oldVal, Object newVal)：</code><span>使用一个新值 newVal 替换 List 对象的所有旧值 oldVal。</span></p></li></ul><h2 id='复制'><span>复制</span></h2><p><strong><span>Collections 类的 copy() 静态方法用于将指定集合中的所有元素复制到另一个集合中。执行 copy() 方法后，目标集合中每个已复制元素的索引将等同于源集合中该元素的索引。</span></strong></p><p><span>copy() 方法的语法格式如下：</span></p><pre class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" spellcheck="false" lang="java"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="java"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 14px; left: 35px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 31px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style="text-rendering: auto;"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -31px; width: 31px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -31px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 22px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable-3">void</span> <span class="cm-def">copy</span>(<span class="cm-variable">List</span> <span class="cm-operator">&lt;?</span> <span class="cm-keyword">super</span> <span class="cm-variable">T</span><span class="cm-operator">&gt;</span> <span class="cm-variable">dest</span>,<span class="cm-variable">List</span><span class="cm-operator">&lt;?</span> <span class="cm-keyword">extends</span> <span class="cm-variable">T</span><span class="cm-operator">&gt;</span> <span class="cm-variable">src</span>)</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 32px;"></div><div class="CodeMirror-gutters" style="height: 32px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 30px;"></div></div></div></div></pre><p><span>其中，dest 表示目标集合对象，src 表示源集合对象。</span></p><p><span>注意：目标集合的长度至少和源集合的长度相同，如果目标集合的长度更长，则不影响目标集合中的其余元素。如果目标集合长度不够而无法包含整个源集合元素，程序将抛出 IndexOutOfBoundsException 异常。</span></p></div></div>
 </body>
 </html>

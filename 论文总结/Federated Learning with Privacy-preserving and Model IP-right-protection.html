@@ -1,0 +1,1375 @@
+<!doctype html>
+<html style='font-size:20px !important'>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+
+
+/*快速自定义配置*/
+:root {
+    --monospace:  "Fira Code","Cascadia Code", HYZhengYuan,Menlo, "Ubuntu Mono",JetBrainsMonoNL-Regular Consolas; /*代码字体*/
+    --text-font: var(--monospace); /*正文字体*/
+    --title-font: var(--monospace); /*标题字体*/
+    --latex-font: var(--monospace); /*LaTeX字体(不含英语)*/
+    --text-line-height: 1.6; /*正文行间距*/
+    --code-line-height: 1.6; /*代码块行间距*/
+    --p-spacing: 0.8rem; /*段间距*/
+    --text-size: 12px;
+}/*
+ * Copyright (C) 2018 Drake, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * GitHub https://github.com/liangjingkanji/DrakeTyporaTheme
+ */
+@import url();
+@include-when-export url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --text-color: #304455;
+    --bg-color: #ffffff;
+    --control-text-color: var(--text-color);
+    --meta-content-color: var(--text-color);
+    --active-file-border-color: var(--drake-accent);
+    --rawblock-edit-panel-bd: var(--code-block-bg-color);
+    --item-hover-bg-color: #E5E5E596;
+    --active-file-bg-color: var(--item-hover-bg-color);
+
+    --blur-text-color: rgba(48, 68, 85, 0.5);
+    --drake-accent: #31a062;
+    --drake-highlight: #d63200;
+    --a-color: var(--drake-accent);
+    --variable-color: var(--drake-highlight);
+    --outline-active-color: var(--a-color);
+    --code-block-bg-color: #f8f8f8;
+    --code-block-color: #525252;
+    --title-color: #273849;
+    --blockquote-border-color: #f66;
+    --blockquote-color: var(--text-color);
+    --blockquote-bg-color: #f8f8f8;
+    --strong-color: var(--title-color);
+    --h2-underline-color: var(--title-color);
+    --horizontal-divider-color: var(--title-color);
+    --height-light-color: var(--drake-highlight);
+    --height-light-border-color: var(--drake-highlight);
+    --yaml-color: #777777;
+    --yaml-bg-color: #f7f7f7;
+    --footnotes-bg-color: #3c3d3e;
+    --footnotes-highlight: #FFD760;
+    --table-border-color: #dfe2e5;
+    --table-header-bg-color: #f8f8f8;
+    --table-bg-color: var(--bg-color);
+    --table-n2-bg-color: #f8f8f8;
+    --input-bg-color: #f2f2f2;
+    --btn-hover-bg-color: #f2f2f2;
+    --checkbox-checked: url("data:image/svg+xml,%3Csvg class='icon' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M425.984 726.016l384-384-59.99-61.995-324.01 324.011-152.021-152.021L213.973 512zm384-598.016q36.01 0 61.013 25.984T896 213.974v596.01q0 34.005-25.003 59.99t-61.013 25.983h-596.01q-36.011 0-61.014-25.984t-25.003-59.989v-596.01q0-34.006 25.003-59.99T213.973 128h596.011z' fill='%2365b73b'/%3E%3C/svg%3E");
+    --checkbox-unchecked: url("data:image/svg+xml,%3Csvg class='icon' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M810.667 213.333v597.334H213.333V213.333h597.334m0-85.333H213.333C166.4 128 128 166.4 128 213.333v597.334C128 857.6 166.4 896 213.333 896h597.334C857.6 896 896 857.6 896 810.667V213.333C896 166.4 857.6 128 810.667 128z' fill='%23333333'/%3E%3C/svg%3E");
+}
+
+html {
+    font-size: var(--text-size);
+}
+
+body {
+    font-family: var(--text-font) !important;
+    color: var(--text-color);
+    -webkit-font-feature-settings: "liga" on, "calt" on;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+p {
+    line-height: var(--text-line-height);
+}
+
+/*code block*/
+.md-fences {
+    font-size: 1rem;
+    padding: 0.5rem !important;
+    border-radius: 2px;
+    word-wrap: normal;
+    background-color: var(--code-block-bg-color);
+    color: var(--code-block-color);
+    border: none;
+    line-height: var(--code-line-height);
+}
+
+/*inline latex*/
+.MathJax {
+    font-size: 120% !important;
+}
+.MathJax text, .MathJax use {
+    font-family: var(--latex-font);
+}
+/*math-block latex*/
+.md-math-block .MathJax {
+    font-size: 130% !important;
+}
+
+/*mermaid*/
+[id^=mermaidChart] .cluster rect {
+    fill: var(--table-n2-bg-color) !important;
+    stroke: var(--table-border-color) !important;
+}
+[id^=mermaidChart] .clusters span.nodeLabel {
+    color: var(--text-color) !important;
+    line-height: 1.8rem;
+}
+[mermaid-type="journey"] line {
+    stroke: #7a7a7a !important;
+}
+[mermaid-type="journey"] .label {
+    color: #333 !important;
+}
+[id^=mermaidChart] .relationshipLabelBox {
+    fill: var(--bg-color) !important;
+    opacity: 1 !important;
+    background-color: var(--bg-color) !important;
+}
+[id^=mermaidChart] .legend {
+    fill: var(--text-color) !important;
+}
+[id^=mermaidChart] g.label {
+    font-size: 1rem !important;
+}
+[id^=mermaidChart] line.divider {
+    stroke: var(--table-border-color) !important;
+}
+[id^=mermaidChart] span.nodeLabel {
+    color: var(--code-block-color) !important;
+    line-height: 1.8rem;
+}
+tspan {
+    color: var(--text-color)
+}
+[id^=mermaidChart] .entityLabel {
+    fill: var(--code-block-color) !important;
+}
+[id^=mermaidChart] {
+    fill: var(--text-color) !important;
+}
+[id^=mermaidChart] rect.rect {
+    fill: rgba(175, 255, 212, 0.3) !important;
+}
+.md-diagram-panel-preview text.actor > tspan { /*方块文字*/
+    fill: var(--code-block-color) !important;
+    stroke: none !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .actor, .md-diagram-panel-preview .entityBox { /*方块*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+.md-diagram-panel-preview .actor-line { /*竖线*/
+    stroke: var(--text-color) !important;
+    stroke-width: 1px;
+}
+.md-diagram-panel-preview .messageLine0 { /*横线*/
+    stroke-width: 1.5;
+    stroke-dasharray: none;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .messageLine1 { /*虚线*/
+    stroke-width: 1.5 !important;
+    stroke-dasharray: 2, 2 !important;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .messageText { /*描述文字*/
+    fill: var(--text-color) !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .activation0 { /*长方形*/
+    fill: #e6e6e6 !important;
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .labelText, .md-diagram-panel-preview .labelText > tspan { /*循环标记*/
+    fill: var(--code-block-color) !important;
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+    dominant-baseline: unset;
+    alignment-baseline: unset;
+}
+.md-diagram-panel-preview .labelBox { /*循环标记背景*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+.md-diagram-panel-preview .loopLine { /*循环标记虚线*/
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .loopText, .md-diagram-panel-preview .loopText > tspan { /*循环名称*/
+    fill: var(--text-color) !important;
+    font-size: 1rem !important;
+}
+.md-diagram-panel-preview .sequenceNumber { /*序号*/
+    fill: var(--bg-color) !important;
+}
+pre.md-fences-advanced.md-focus .md-fences-adv-panel {
+    border: none;
+}
+.md-diagram-panel-preview .edgePath .path { /*箭头*/
+    stroke: var(--text-color) !important;
+}
+.md-diagram-panel-preview .edgeLabel rect { /*条件文字背景*/
+    fill: var(--bg-color) !important;
+}
+.md-diagram-panel-preview .edgeLabel span { /*条件文字*/
+    color: var(--text-color) !important;
+    background: var(--bg-color) !important;
+}
+.md-diagram-panel-preview .node rect,
+.md-diagram-panel-preview .node circle,
+.md-diagram-panel-preview .node ellipse,
+.md-diagram-panel-preview .node polygon,
+.md-diagram-panel-preview .node path { /*形状*/
+    stroke: var(--table-border-color) !important;
+    fill: var(--code-block-bg-color) !important;
+}
+#write .md-diagram-panel .md-diagram-panel-preview div { /*形状内文字*/
+    color: var(--code-block-color);
+    font-family: var(--text-font) !important;
+    font-size: 1rem !important;
+}
+
+/*code snippet*/
+#write code, tt {
+    margin: 0 2px;
+    color: var(--drake-highlight);
+    background-color: #f8f8f8;
+    padding: 3px 5px;
+    border-radius: 2px;
+}
+
+/*variable*/
+var {
+    color: var(--variable-color);
+    font-weight: bold;
+}
+
+/*raw block*/
+.md-rawblock-control:not(.md-rawblock-tooltip) {
+    border-radius: 2px 0 2px 2px;
+    padding: 0.2rem !important;
+}
+.md-rawblock:hover > .md-rawblock-container {
+    background: none;
+}
+.md-rawblock-input {
+    font-size: 1rem;
+}
+.md-rawblock-tooltip-btn:hover {
+    background: none;
+}
+.md-rawblock:hover > .md-rawblock-tooltip {
+    border-radius: 2px 2px 0 0;
+    margin-bottom: 2px !important;
+}
+.md-rawblock-tooltip.md-rawblock-control {
+    border-radius: 2px 2px 0 0;
+    color: var(--code-block-color);
+}
+.md-rawblock-tooltip-name {
+    color: var(--code-block-color);
+    opacity: 1;
+}
+
+/*quote block*/
+blockquote:before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 4px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--blockquote-border-color);
+    border-radius: 2px;
+}
+
+blockquote {
+    color: var(--blockquote-color);
+    border-radius: 2px;
+    padding: 10px 16px;
+    background-color: var(--blockquote-bg-color);
+    position: relative;
+    border-left: none;
+}
+
+#write strong {
+    color: var(--strong-color);
+    font-weight: bold;
+}
+#write blockquote strong {
+    color: var(--blockquote-color);
+}
+
+/*link*/
+#write a {
+    color: var(--a-color);
+    text-decoration: none;
+}
+[md-inline=link] a {
+    margin: 0 .2rem;
+}
+a:any-link {
+    color: var(--a-color);
+}
+
+img {
+    border-left: none;
+    border-right: none;
+    vertical-align: baseline;
+    border-radius: 2px;
+}
+
+#write {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px 100px;
+}
+#typora-source .CodeMirror-lines {
+    max-width: 1200px;
+}
+
+#write > ul:first-child,
+#write > ol:first-child {
+    margin-top: 30px;
+}
+
+body > *:first-child {
+    margin-top: 0 !important;
+}
+
+body > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--title-font);
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+    color: var(--title-color);
+}
+
+h3.md-focus:before, h4.md-focus:before, h5.md-focus:before, h6.md-focus:before {
+    visibility: hidden;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.on-focus-mode h2.md-end-block.md-heading:not(.md-focus):not(.md-focus-container):after {
+    background-color: var(--blur-text-color) !important;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+
+h1 tt,
+h1 code {
+    font-size: inherit !important;
+}
+
+h2 tt,
+h2 code {
+    font-size: inherit !important;
+}
+
+h3 tt,
+h3 code {
+    font-size: inherit !important;
+}
+
+h4 tt,
+h4 code {
+    font-size: inherit !important;
+}
+
+h5 tt,
+h5 code {
+    font-size: inherit !important;
+}
+
+h6 tt,
+h6 code {
+    font-size: inherit !important;
+}
+
+p, blockquote, ul, ol, dl, table {
+    margin: var(--p-spacing) 0;
+}
+
+li > ol,
+li > ul {
+    margin: 0 0;
+}
+li {
+    margin: 0.5em 0;
+}
+
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: var(--horizontal-divider-color);
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+body > h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h3:first-child,
+body > h4:first-child,
+body > h5:first-child,
+body > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+    margin-top: 0;
+}
+
+li p.first {
+    display: inline-block;
+}
+
+ul, ol {
+    padding-inline-start: 2em;
+}
+
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+
+.ty-table-edit {
+    margin-top: -1rem !important;
+}
+#write table {
+    margin-top: 1rem;
+    word-break: initial;
+    background-color: var(--table-bg-color);
+}
+table tr {
+    border-top: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 0;
+}
+table th {
+    font-weight: bold;
+    border: .1em solid var(--table-border-color);
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 6px 13px;
+}
+table thead {
+    background-color: var(--table-header-bg-color);
+}
+table tr:nth-child(2n) {
+    background-color: var(--table-n2-bg-color);
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+#write em {
+    padding: 0 5px 0 2px;
+}
+
+#write table thead th {
+    background-color: var(--table-header-bg-color);
+}
+
+/* height light */
+#write mark {
+    border: .1em solid var(--height-light-border-color);
+    color: var(--height-light-color);
+    background-color: transparent;
+    padding: .1rem .5rem;
+    border-radius: 2rem;
+    margin: 0 .2rem;
+    font-size: .95rem;
+
+    /*background-color: yellow;
+    color: black;*/
+
+}
+
+/*shortcut*/
+kbd {
+    border: .1em solid #5b5b5e;
+    background: transparent;
+    color: var(--text-color);
+    margin: 0 .4rem;
+    font-family: var(--text-font) !important;
+    font-size: .95rem;
+    padding: .3em .4em;
+    border-radius: .4em;
+    box-shadow: .1em .1em .2em rgba(0, 0, 0, 0.3);
+}
+
+#write del {
+    padding: 1px 2px;
+}
+
+.md-task-list-item > input {
+    margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 12px;
+    }
+
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+/*YAML*/
+#write pre.md-meta-block {
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.45;
+    background-color: var(--yaml-bg-color);
+    border: 0;
+    border-radius: 2px;
+    color: var(--yaml-color);
+    margin-top: 0 !important;
+}
+
+.mathjax-block > .code-tooltip {
+    bottom: .375rem;
+}
+
+#write > h3.md-focus:before {
+    left: -1.5625rem;
+    top: .375rem;
+}
+
+#write > h4.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h5.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h6.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+.md-image > .md-meta {
+    border-radius: 2px;
+    font-family: initial;
+    padding: 2px 0 0 4px;
+    color: inherit;
+}
+
+.md-tag {
+    color: inherit;
+}
+
+.md-toc {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.typora-quick-open-item {
+    font-size: 1rem !important;
+    height: 50px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#typora-quick-open {
+    box-shadow: 0 0 8px #00000045;
+    padding: 0;
+}
+
+.ty-quick-open-category.ty-has-prev .ty-quick-open-category-title {
+    border-top: none;
+}
+
+#typora-quick-open-input {
+    margin: 8px;
+    box-shadow: none;
+    border-radius: 2px;
+}
+
+#typora-quick-open-input input {
+    font-size: 1rem;
+    box-shadow: none;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 32px;
+    max-height: 32px;
+    border: none;
+}
+
+.modal-dialog#typora-quick-open {
+    border-radius: 8px;
+}
+
+.ty-quick-open-category-title {
+    padding-left: 8px;
+    color: #BEBEBE;
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+}
+
+.typora-quick-open-item-path {
+    font-size: 0.8rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 1px;
+}
+
+/*search input*/
+.form-control {
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+#md-searchpanel .btn {
+    border-radius: 2px;
+}
+
+#search-panel-replaceall-btn {
+    padding-right: 5px !important;
+    text-align: center !important;
+}
+
+#search-panel-replace-btn {
+    text-align: center !important;
+}
+
+#md-searchpanel input {
+    background: var(--input-bg-color);
+    border-radius: 2px;
+}
+
+.searchpanel-search-option-btn {
+    border-radius: 2px;
+    border: none;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.searchpanel-search-option-btn.active {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+#md-notification:before {
+    top: 10px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header,
+.context-menu,
+.megamenu-content,
+footer {
+    font-family: initial;
+}
+
+/*sidebar*/
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state {
+    visibility: visible;
+}
+.file-node-content {
+    display: flex;
+    align-items: center;
+}
+.file-node-open-state {
+    margin-right: .5rem;
+}
+.file-node-icon {
+    margin-right: .5rem;
+}
+
+#typora-sidebar {
+    font-size: inherit;
+    font-family: var(--title-font);
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+.file-list-item-summary, .file-list-item-parent-loc, .file-list-item-time, .file-list-item-summary {
+    font-size: 0.9rem !important;
+    font-family: var(--text-font);
+}
+
+.file-list-item-file-ext-part {
+    display: none;
+}
+
+.outline-item {
+    font-size: 1rem;
+}
+
+/*footnotes mark*/
+#write .md-footnote {
+    background-color: inherit;
+    color: var(--drake-highlight);
+    font-size: 0.9rem;
+    border-radius: 0.9rem;
+    padding-left: 0;
+}
+
+#write .md-footnote:before {
+    content: "[";
+}
+
+#write .md-footnote:after {
+    content: "]";
+}
+
+/*footnotes content*/
+.md-hover-tip .code-tooltip-content {
+    border-radius: 2px;
+}
+
+/*footnotes title*/
+span.md-def-name {
+    padding-right: 3ch;
+    padding-left: 0;
+    position: relative;
+    font-weight: normal;
+}
+
+/*footnotes desc*/
+.footnotes {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--text-color);
+    position: relative;
+}
+
+/*footnotes tooltip text*/
+.code-tooltip-content .md-plain {
+    font-size: 0.9rem;
+    font-family: inherit;
+}
+
+.code-tooltip-content code {
+    padding: 0 2px;
+    font-family: inherit;
+    color: var(--footnotes-highlight);
+    background-color: inherit;
+}
+
+.code-tooltip-content a {
+    color: var(--footnotes-highlight);
+}
+
+div.code-tooltip-content {
+    box-shadow: 0 0 8px #00000045;
+    background: var(--footnotes-bg-color);
+}
+
+.footnotes {
+    opacity: 1;
+}
+
+.md-def-name:after {
+    content: ". ^";
+    color: var(--text-color);
+}
+
+.md-def-footnote .md-def-name:before {
+    content: "";
+    color: var(--text-color);
+    position: absolute;
+}
+
+.md-def-name:before {
+    content: "";
+    color: var(--text-color);
+    position: absolute;
+}
+
+.md-content.md-url, .md-def-content.md-def-url.md-auto-disp {
+    text-decoration: none;
+    border-bottom: .1rem solid var(--text-color);
+}
+
+.CodeMirror-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.file-list-item-summary {
+    font-size: 1em;
+}
+
+.pin-outline #outline-content .outline-active strong, .pin-outline .outline-active {
+    font-weight: 500;
+    color: var(--outline-active-color);
+}
+
+.file-list-item.active {
+    border-left: 4px solid var(--drake-accent);
+}
+
+#md-searchpanel .btn:not(.close-btn):hover {
+    box-shadow: none;
+    background: var(--btn-hover-bg-color);
+}
+
+/*checkbox*/
+#write input[type=checkbox] {
+    opacity: 0;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+    margin-top: 0;
+    top: 0;
+}
+
+#write .ul-list li.md-task-list-item.task-list-done::before {
+    content: "";
+    background: var(--checkbox-checked) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+}
+#write .ul-list li.md-task-list-item.task-list-not-done::before {
+    content: "";
+    background: var(--checkbox-unchecked) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: -2em;
+}
+.task-list-item p {
+    line-height: 1.6rem;
+}
+
+/*insert table*/
+.btn {
+    border-radius: 2px;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--drake-highlight);
+}
+
+.btn-primary {
+    background-color: transparent;
+    color: var(--drake-highlight);
+}
+
+.btn-default {
+    background-color: transparent;
+}
+
+.btn:active {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+#table-insert-col, #table-insert-row {
+    background: var(--input-bg-color);
+    border-radius: 2px;
+}
+
+/*preference panel*/
+#megamenu-content {
+    background-image: none !important;
+    background-color: var(--bg-color);
+}
+#top-titlebar {
+    height: inherit;
+    background-color: var(--bg-color);
+}
+#megamenu-menu-sidebar {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.long-btn {
+    width: inherit;
+    min-width: 300px;
+    border: 1px solid var(--text-color);
+    border-radius: 6px;
+}
+.megamenu-menu-panel h1 {
+    margin-bottom: 3rem;
+    text-align: left;
+}
+.megamenu-menu-panel h1, .megamenu-menu-panel h2 {
+    font-weight: normal;
+}
+#recent-file-panel-search-input {
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    padding-left: 8px;
+}
+#recent-file-panel-search-input::placeholder {
+    color: var(--text-color);
+    opacity: .5;
+}
+.megamenu-menu-header {
+    border-bottom: none;
+}
+#recent-file-panel-action-btn {
+    background: none;
+    border: none;
+}
+#recent-file-panel-action-btn-container {
+    float: none;
+    display: inline-block;
+}
+#top-titlebar .toolbar-icon.btn.hover, #top-titlebar .toolbar-icon.btn:hover {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--text-color);
+}
+.megamenu-menu-panel .btn:hover {
+    background-color: var(--btn-hover-bg-color) !important;
+    color: var(--text-color);
+}
+#recent-file-panel tbody tr:nth-child(2n-1),
+.megamenu-menu-panel table thead,
+.megamenu-menu-panel table tr {
+    background-color: transparent;
+}
+.megamenu-menu-panel table {
+    font-weight: normal;
+}
+#megamenu-back-btn {
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+.megamenu-menu-header #megamenu-menu-header-title {
+    color: var(--text-color);
+}
+header, .context-menu, .megamenu-content, footer {
+    font-family: var(--text-font);
+}
+.ty-preferences select {
+    padding-left: 2px;
+}
+.preference-item-hint {
+    font-size: 14px;
+}
+a.ty-link {
+    color: var(--a-color);
+    margin: 0 .2rem;
+}
+
+/**
+    code render
+    Name: IntelliJ IDEA light theme
+    From IntelliJ IDEA by JetBrains
+ */
+.cm-s-inner.CodeMirror {
+    background: none;
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-number {
+    color: #a32eff;
+}
+.cm-s-inner span.cm-atom {
+    color: #a32eff;
+}
+.cm-s-inner span.cm-def {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-variable {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-variable-2 {
+    color: #00627A;
+}
+.cm-s-inner span.cm-variable-3, .cm-s-inner span.cm-type {
+    color: #00627A;
+}
+.cm-s-inner span.cm-property {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-keyword {
+    color: #d63200;
+}
+.cm-s-inner span.cm-operator {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-comment {
+    color: #787878;
+}
+.cm-s-inner span.cm-string {
+    color: #31a062;
+}
+.cm-s-inner span.cm-string-2 {
+    color: #31a062;
+}
+.cm-s-inner span.cm-qualifier {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-error {
+    color: red;
+}
+.cm-s-inner span.cm-attribute {
+    color: #2973b7;
+}
+.cm-s-inner span.cm-tag {
+    color: #2973b7;
+}
+.cm-s-inner span.cm-link {
+    color: #4A86E8;
+}
+.cm-s-inner span.cm-builtin {
+    color: var(--code-block-color);
+}
+.cm-s-inner span.cm-bracket {
+    color: #2973b7;
+}
+.cm-s-inner .CodeMirror-gutters {
+    border-right: 1px solid rgba(120, 120, 120, 0.3);
+    background: var(--code-block-bg-color);
+}
+.cm-s-inner .CodeMirror-linenumber {
+    color: #787878;
+}
+
+
+
+</style><title>Federated Learning with Privacy-preserving and Model IP-right-protection</title>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='federated-learning-with-privacy-preserving-and-model-ip-right-protection'><span>Federated Learning with Privacy-preserving and Model IP-right-protection</span></h1><h2 id='摘要'><span>摘要</span></h2><p><span>FL通过使用安全多方计算(MPC)、差异隐私和硬件解决方案等方法，在不同数据源上构建和使用分布式多方机器学习系统和统计模型，来保证数据的安全性。除了数据隐私问题，我们认为“模型”的概念很重要，在开发和部署联邦模型时，它们很容易暴露于各种风险，包括剽窃、非法复制和滥用。为了解决这些问题，我们引入了一种新的所有权验证方案FedIPR，通过在FL模型中嵌入水印来验证FL模型的所有权，保护模型的知识产权(IPR或IP-right)。</span></p><h2 id='介绍'><span>介绍</span></h2><p><span>由于统计模型是人工智能的核心实体，在实际开发和部署FL模型时，涉及到包括训练数据、硬件和人类专业知识在内的多种资产。 这使得“模型管理”成为一个关键问题。 为了防止模型被滥用或未经授权的剽窃，我们加强了模型的知识产权意识，并在联邦成员学习中引入了模型的知识产权保护机制。 本文通过在深度神经网络(DNN)模型参数中嵌入水印来实现联邦模型的知识产权保护，在实践中取得了良好的效果。</span></p><p><span>联邦学习的真正精神在于它能够提供强大的隐私保护和模型知识产权保护，与普通的联邦学习不同，我们称之为安全联邦学习(SFL)。本文全面概述了SFL的关键方面，包括在整个生命周期中的安全保证和模型知识产权保护方面的现有工作。</span></p><h2 id='贡献'><span>贡献</span></h2><p><span>1）重申了安全联邦学习的核心概念，安全保证覆盖整个FL生命周期，包括数据预处理、模型训练、评估和部署等步骤</span></p><p><span>2）提供了一个通用的SFL体系结构，它涵盖了HFL和VFL场景，并总结了整个生命周期中每个阶段的威胁、攻击和防御方面的现有工作。</span></p><p><span>3）将模型的知识产权作为构建安全FL系统的重要组成部分，并对如何保护联邦模型的知识产权给出了详细的实现。</span></p><h2 id='安全联邦学习综述'><span>安全联邦学习综述</span></h2><p><span>对安全的定义分为五个方面：</span></p><p><img src="https://s2.loli.net/2023/07/07/PKNzkmo4TE2at1Q.png" referrerpolicy="no-referrer" alt="image-20230707201508922"></p><ol start='' ><li><p><span>private training datasets safe（私有训练数据安全）提供安全协议来处理模型反演攻击和防止原始数据集被盗</span></p></li><li><p><span>model parameters safe(模型参数安全) 攻击者可以通过模型反演重建原始数据集</span></p></li><li><p><span>model structure safe(模型结构安全)  这不是必填字段，在VFL设置中，每个参与者持有部分模型，而全局模型结构未知。 然而，在HFL设置中，大多数情况下，全局模型结构是预定义的，任何参与FL系统的人都事先知道全局模型结构。 </span></p></li><li><p><span>model performance(模型性能) 隐私损失和性能损失之间存在权衡</span></p></li><li><p><span>model IP-right safe（模型IP权限安全）保护知识产权以防止模型资产被盗用。</span></p></li></ol><h3 id='sfl定义'><span>SFL定义</span></h3><p><span>SFL</span></p><ol start='' ><li><p><span>提供一个安全机制，包括但不限于：安全多方计算MPC，差分隐私DP，基于加密的解决方案（主要软加密：同态加密等），可信执行环境</span></p></li><li><p><span>有明确定义的威胁模型以及相应的可证明安全的防御策略，目的是在整个生命周期中提供和澄清联邦学习的安全范围。</span></p></li><li><p><span>对训练后的模型进行知识产权保护，防止模型被剽窃。</span></p></li></ol><h3 id='结构'><span>结构</span></h3><p><span>假定有3个参与者共同使用一个统计模型，基本框架如下，分为HEL和VFL ，该体系一般由以下组件组成：</span></p><p><img src="https://s2.loli.net/2023/07/07/1t7ZQUKdSJmw9RC.png" referrerpolicy="no-referrer" alt="image-20230707204300316"></p><ol start='' ><li><p><span>Distributed machine learning(DML) :在FL场景下，基于分布式机器学习框架实现了多设备间的协同训练。 然而，与传统的DML不同，FL和DML有几个关键的区别：</span></p><ol start='' ><li><p><span>FL是基于数据隐私和安全的，而DML是基于大规模计算的。 </span></p></li><li><p><span>FL的参与者可以是个人，也可以是组织，而DML是一个多节点系统，每个参与者都是单个集群或数据中心中的一个计算节点。 </span></p></li><li><p><span>FL允许不同的参与者具有不同的配置（如数据分布、数据大小、硬件、网络等）。 相比之下，DML更加稳定，每个节点的配置几乎相同。 </span></p></li><li><p><span>FL需要激励机制来鼓励更多的参与者参与到FL生态系统中，而DML不需要这样的机制。</span></p></li></ol></li><li><p><span>Security protocol： 联邦学习容易在各个周期受到攻击，为了降低风险，多个参与者预先协商一系列措施，在不损害数据隐私的前提下完成任务要求。这些步骤成为安全协议：既可以基于传统的隐私保护计算，如MPC、DP和HE，也可以基于算法的方法，如修改训练损失函数和改进模型聚合。</span></p></li><li><p><span>Model IPR protection.（知识产权保护模式）</span></p><ol start='' ><li><p><span>由于训练阶段涉及到多个模型，每当发生故障时，为了找到责任所在，关键是能够追溯到模型的原始创建者。 </span></p></li><li><p><span>FL模型具有很高的商业价值，必须防止对手在未经合法许可的情况下剽窃、滥用和重新分发有价值的FL模型。 </span></p></li><li><p><span>激励机制是物流生态系统的重要组成部分，基于“多劳多得”的原则，知识产权可以让物流管理者了解不同模式的贡献。</span></p></li></ol></li></ol><h2 id='联邦学习生命周期的安全性'><span>联邦学习生命周期的安全性</span></h2><h3 id='联邦学习生命周期及其潜在风险'><span>联邦学习生命周期及其潜在风险</span></h3><p><span>四个易受攻击的阶段如下：</span></p><p><img src="https://s2.loli.net/2023/07/07/tLgRPjwXSDTcmvq.png" referrerpolicy="no-referrer" alt="image-20230707214041274"></p><ol start='' ><li><p><span>预处理。 参与者首先确定需要用FL解决的问题和要求。 现阶段有两大任务。 第一个是数据预处理，根据任务需求，工程师首先对原始训练数据集进行变换，使其适合于建立机器学习模型，通常，每个客户端独立生成和存储数据，数据预处理可以在本地进行。 但是，在某些情况下，需要从服务器端维护和下载额外的数据。 第二步是准备初始化的模型，为此，客户端将向服务器发送请求全局模型的指令。在这个阶段，对训练数据集的恶意修改，如错误标记、噪声和中毒，是最大的安全威胁，并影响后续的。</span></p></li><li><p><span>联邦模型训练。 基于分布式体系结构，多个参与者协作训练一个共享全局模型，同时将训练数据集保存在本地设备上。 模型训练阶段容易受到各种攻击，包括中毒攻击、后门攻击、拜占庭攻击等。</span></p></li><li><p><span>联邦模型评估。 模型评估是使用不同的评估指标来评估机器学习模型的性能，并通过反馈来决定是否停止训练的过程。 模型评估既可以在服务器上完成，也可以在本地客户机上完成。 这一阶段的潜在安全风险主要来自规避攻击（又称对抗性示例），其目标是通过仔细扰动训练示例来愚弄模型以做出错误的输出。 </span></p></li><li><p><span>部署。 最后一步是选择更新后的模型，并将其集成到现实世界的应用程序中，以做出实际的业务决策。 该阶段潜在的安全风险来自三个方面，即规避攻击、模型推理攻击和模型剽窃。 </span></p><p><span>下图总结了整个生命周期中不同阶段的安全风险。 </span></p></li></ol><p><img src="https://s2.loli.net/2023/07/07/PrLRo3ipOw5aqId.png" referrerpolicy="no-referrer" alt="image-20230707214924377"></p><h3 id='预处理的安全性'><span>预处理的安全性</span></h3><p><span>数据虽然大部分时候生成存储在本地客户端，但如果客户端被恶意控制，则可以修改数据，影响后续训练步骤。</span></p><h4 id='1client-side-attacks-客户端共计'><span>1.Client-side attacks 客户端共计</span></h4><p><span>参与者被控制或者是恶意的，可以在训练阶段修改数据：错误标记，噪声和中毒。预处理攻击主要依赖恶意客户端数量，同时FL每轮选择的客户端不固定，模型聚合可以取消后门模型的影响。污染数据在整个训练样本中的百分比也是影响攻击的一个关键因素。</span></p><p><strong><span>防守措施：</span></strong><span>用自适应策略[41,42]改进选择机制，而不是随机选择，可以进一步减少恶意客户端造成的损失。 异常检测识别恶意客户端是在预处理阶段防御客户端攻击的另一种有效方法。 例如，使用预先训练的模型，FL Manager可以检查训练数据集以过滤掉潜在的敌对攻击者。</span></p><h4 id='2sever-side-attacks-服务端攻击'><span>2.Sever-side attacks 服务端攻击</span></h4><p><span>在HFL中,攻击频繁，攻击者可以任意修改数据或全局模型参数，然后将伪造的数据或全局模型分发到选定的客户端进行训练。 服务器端攻击比客户端攻击更难防御，在最坏的情况下，服务器可以将伪造的数据或全局模型分发到所有客户端，这就相当于所有参与者都是恶意的。 目前，仍然没有很好的策略来防御服务器端的攻击，这就是为什么在大多数FL文献中，中心服务器被要求是可信的。 另一个解决方案是使用TEE作为可信任的第三方[43,44]，它提供代码和数据的保密性和完整性保证。</span></p><h3 id='模型训练的安全性'><span>模型训练的安全性</span></h3><p><span>模型训练阶段的攻击是联邦学习安全的主要研究领域，攻击者可以通过以下方式攻击模型训练过程。 </span></p><p><span>1）在HFL设置中，攻击者可以控制中央服务器或客户端，也可以窃听和窃取传输的参数（图(a))。 </span></p><p><img src="https://s2.loli.net/2023/07/07/BYnkKzGF2HCIefu.png" referrerpolicy="no-referrer" alt="image-20230707221834911"></p><p><span>2）在VFL设置中，攻击者既可以控制被动方，也可以控制主动方，或者窃听窃取传输的参数（图(b))。 在下面的小节中，我们将讨论训练阶段的威胁、攻击和相应的防御策略。 根据攻击者的能力，将模型训练攻击分为梯度攻击和中毒攻击。</span></p><p>&nbsp;</p><p><img src="https://s2.loli.net/2023/07/07/Pzmpxu3ylajGr1D.png" referrerpolicy="no-referrer" alt="image-20230707221850391"></p><h4 id='1梯度反演攻防'><span>1.梯度反演攻防</span></h4><p><strong><span>Gradient inversion attacks</span></strong><span> 梯度反演攻击</span></p><p><span>梯度反演攻击的目标是从共享的梯度中重建或恢复敏感信息。</span></p><ol start='' ><li><p><span>Zhu等人[15]提出了DLG，DLG不需要GAN模型和梯度以外的附加信息，其核心思想是对合成梯度进行优化，使合成数据在优化时接近于真实的训练数据。 但是DLG容易受到收敛和标签一致性问题的影响，</span></p></li><li><p><span>为此，Zhao等人[46]提出了改进的DLG(IDLG)，保证了从共享梯度中提取地面真值标签。 </span></p></li><li><p><span>Geiping等人[47]通过将损失函数设置为与总变差(TV)范数的余弦相似度，提出了反演梯度来恢复原始输入图像。 与DLG/IDLG相比，即使在深度和非光滑模型上，反演梯度也表现得很好。 </span></p></li><li><p><span>Wang等人[48]提出了基于梯度的自适应隐私攻击(SAPAG)，将距离测度设为基于梯度差的高斯核。 Zhu和Blaschko[49]提出了R-GAP，它提供了一个从梯度恢复数据的递归过程。 上述攻击主要应用于HFL场景，</span></p></li><li><p><span>最近，Jin等人[50]提出了在垂直联邦学习(CAFE)中的灾难性数据泄漏攻击，在VFL设置下进行大批量数据泄漏攻击，提高了数据恢复质量。 </span></p><p><span>在下表1中总结了一些常见的梯度反转攻击方法，以供参考。</span></p><p><img src="https://s2.loli.net/2023/07/07/eUZIhumxMAkNCHt.png" referrerpolicy="no-referrer" alt="image-20230707223400992"></p></li></ol><p><strong><span>Defense against gradient inversion attacks 防御梯度反转攻击</span></strong></p><ol start='' ><li><p><span>加密梯度 一个简单的方法是加密梯度，这使得梯度值在没有秘密密钥的情况下不可用。</span></p><ul><li><p><span>例如，Hardy等人[52]展示了如何使用泰勒近似来逼近损失函数，这使得FL的训练过程可以在加密设置下执行。 Phong等人[16]提出在发送前使用同态加密对梯度进行加密。基于加密的解决方案容易受到效率问题的困扰，如何平衡安全性和效率仍然是一个具有挑战性的问题。 例如，Zhang等人[53]提出了一种高效的HE解决方案，称为BatchCrypt，用于跨筒仓联邦学习，可以显著降低加密带来的通信开销。</span></p></li></ul></li><li><p><span>梯度压缩 梯度压缩是一种模糊模型结构的方法。 具体地说，梯度压缩可以是剪枝或稀疏，因为部分梯度丢失，使得恢复的图像远离原始数据。 </span></p></li><li><p><span>噪声梯度法。 通过向梯度添加噪声来扰动梯度，以实现差分隐私。 由于不需要加密和解密等耗时的操作，基于噪声的解决方案在实践中更加高效。 </span></p><ul><li><p><span>例如，McMahan等人[55]提出了一种新的算法，称为DP-FEDAVG，用于在联邦设置下对大型神经网络进行用户级差异私人训练。 Wei et al.[56]提出了一个将FL与差分隐私相结合的通用框架，通过调整不同的噪声量来确保不同的保护级别。 然而，基于噪声的解决方案要求算法仔细调整噪声的产生，以保持模型的性能，如模型的精度，完整。 否则，性能可能会严重受损。 如[27]所示，如何平衡安全性和效用仍然是一个具有挑战性的问题。</span></p></li></ul></li></ol><h4 id='2-中毒攻击和防御'><span>2 中毒攻击和防御 </span></h4><ol start='' ><li><p><span>Poisoning attacks 中毒攻击</span></p></li></ol><p><span>中毒攻击分为以下两类：</span></p><ul><li><p><span>目标攻击或后门攻击： 旨在降低模型在具有某些特征的示例上的性能，同时在其他示例上保持良好的性能。中毒攻击不仅需要在攻击前阶段修改数据，还需要合理设计训练算法来达到目标。</span></p><blockquote><p><span>以图像分类为例，攻击者希望模型将具有特定模式（左上角垂直红色条纹（图6(a))、黄色背景（·图(B))的图像错误分类到攻击者选择的类[40]，而主要任务不妥协。 Bagdasaryan等人[40]利用模型替换方法使后门攻击更加持久。 Xie等[57]进一步引入了分布式后门攻击，将一个全局后门触发器分解为多个局部模式，每个模式嵌入到不同恶意客户端的训练数据集中。 Huang[58]讨论了动态环境下如何实现后门攻击。 </span></p></blockquote></li><li><p><span>非目标攻击：目的是降低模型的性能。</span></p><blockquote><p><span>例如，Feng等人[59]提出了DeepConfuse框架，利用自动编码器在训练数据中加入不可感知的噪声，使污染数据混淆在其上训练的相应分类器，在喂入新的干净数据时做出错误的输出。 拜占庭攻击是另一种无目标攻击，Hu等人[60]提出了一种称为权重攻击的方法，其关键思想是在执行模型聚合时改变攻击者的数据集大小，从而改变模型的权重。 Fang等人[61]提出了本地模型中毒攻击，即在训练过程中操纵从受损设备上传到中央服务器的本地模型</span></p></blockquote></li></ul><ol start='2' ><li><p><span>中毒攻击防御 </span></p></li></ol><p><span>FL提供了大量的安全协议来防御模型训练过程中的中毒攻击。 </span></p><ul><li><p><span>拜占庭-鲁棒聚集  其目的是改进经典的FEDAVG算法，并提供安全和鲁棒的聚合以减轻拜占庭攻击。</span></p><blockquote><p><span>Yin等[62]提出了中值和修剪均值聚合来去除异常的局部模型。 Blanchard等人[63]提出了Krum聚集规则，这是一种用于分布式随机梯度下降(SGD)的Byzantine弹性算法，即使存在多个Byzantine工人，它也能保证收敛。 Xie等[64]提出了同步SGD的Zeno聚合规则，至少有一个诚实的工作者就足以保证良好的防御性能。</span></p></blockquote></li><li><p><span>带安全多方计算MPC的FL</span></p><blockquote><p><span>例如，Dong等人[65]将秘密共享与分布式机器学习相结合，在不损害模型性能的前提下实现了一种高级别的安全保证。 Kanagavelu等人[66]提出采用MPC来实现FL的隐私保护模型聚合。</span></p><p><span>与基于加密的解决方案一样，基于MPC的解决方案容易受到效率问题的困扰。 将MPC视为一组技术（或原语）是很重要的，包括但不限于秘密共享(SS)[29]、不经意传输(OT)[67]和乱码电路(GC)[68]。 MPC效率的提高很大程度上依赖于底层基元的突破。</span></p></blockquote></li></ul><h3 id='模型评估的安全性'><span>模型评估的安全性</span></h3><p><span>规避攻击，即对抗性攻击，其目的是通过在推理阶段调整样本来规避模型，通常，这些样本被扰动，使它们无法被人眼区分，而网络无法识别图像内容。 模型评估用于评估模型的性能，并通过反馈来判断是否停止训练，攻击者可以通过构造对抗性测试示例来欺骗联邦模型的评估输出。 根据攻击者的能力，规避攻击可分为以下两类。</span></p><ul><li><p><span>基于梯度的攻击</span></p></li></ul><p><span>这种类型的方法要求攻击者事先访问模型的梯度。</span></p><blockquote><p><span>Goodfellow等人[39]提出了快速梯度符号法(FGSM)，该方法利用损失相对于输入图像的梯度来创建使损失最大化的新图像。 Kurakin等人[75]通过迭代计算对抗性实例来改进FGSM。 Carlini和Wagner。[76]提出了C&amp;W算法，一种新的强大的攻击方法，可以击败防御蒸馏。</span></p></blockquote><ul><li><p><span>信心得分Confidence scores.</span></p></li></ul><p><span>这种方法不需要预先知道模型的梯度，相反，它们使用输出的分类置信度来估计梯度，然后执行类似于上面基于梯度的攻击的优化步骤。</span></p><blockquote><p><span>Chen等人[77]提出了零阶优化(ZOO)来直接估计目标模型的梯度，以生成对抗性示例。 Ilyas et al.[78]提出了自然进化策略的变体(NES)来愚弄分类器在三个现实设置下：查询受限设置、部分信息设置和仅标签设置。 一般说来，规避攻击的防御要困难得多，我们将现有工作中的一些常见观点总结如下[79]。</span></p></blockquote><p><strong><span>Adversarial training</span></strong><span>对抗性训练</span></p><p><span>建立一个健壮的模型，其中包括在训练过程中的对抗性样本。</span></p><blockquote><p><span>例如，Moosavi-Dezfooli et al.[80]通过微调对抗性示例建立了更健壮的分类器。 Goodfellow et al.[39]通过将对抗性目标与分类目标混合作为正则化器来建立鲁棒模型。</span></p></blockquote><p><strong><span>Knowledge distillation知识蒸馏</span></strong></p><p><span>Papernot等人[81]提出了防御性蒸馏，利用知识蒸馏技术训练模型，隐藏Logits层和Softmax输出之间的梯度，使攻击者无法从网络梯度中生成对抗示例。</span></p><p><strong><span>Anomaly detection异常检测</span></strong></p><p><span>Metzen et al.[82]通过使用附着在主分类网络上的检测器子网络检测到对抗性示例。 Grosse et al.[83]从经验上验证了这样一个假设，即在将对抗性示例输入机器学习模型之前，可以使用统计测试来检测它们。</span></p><h3 id='模型部署的安全性'><span>模型部署的安全性</span></h3><p><span>模型部署是整个生命周期的最后一步，目的是将机器学习模型应用到实践中。 这一阶段有三个潜在的风险：</span><strong><span>规避攻击、模型推理攻击和模型剽窃</span></strong><span>。</span></p><p><span>规避攻击讲过了，接下来主要讲模型推理和模型剽窃</span></p><h4 id='1模型推理攻击'><span>1.模型推理攻击</span></h4><p><span>标签推理攻击更容易发生在垂直联邦学习场景中，在VFL中，主动方保存数据矩阵和类标签，而被动方只保存数据矩阵。 标签推断攻击发生在被动方被攻击者控制的情况下，目标是推断出主动方所持有的标签。 </span></p><blockquote><p><span>Fu等人[84]提出了三种针对VFL的标签推理攻击：直接标签推理攻击、被动标签推理攻击和主动标签推理攻击。 Liu等人[85]提出了批标签推理和替换攻击，以恢复具有HE保护通信的VFL设置中的标签。</span></p></blockquote><h4 id='2特征推断攻击'><span>2.特征推断攻击</span></h4><p><span>与标签推理攻击一样，特征推理攻击通常发生在VFL环境中，在VFL环境中，特征被划分并由不同的当事方持有，其目的是推断其他当事方持有的敏感特征信息。</span></p><blockquote><p><span>Luo等人[86]提出了一种针对VFL模型预测的特征推断攻击方法，即主动方试图推断被动方的新样本的特征值</span></p></blockquote><h4 id='3membership-inference-attack隶属度推断攻击'><span>3.Membership inference attack隶属度推断攻击</span></h4><p><span>通常发生在HFL设置中，其中成员被划分并由不同的方持有。 给定数据记录和黑箱模型，攻击者试图通过模型输出来确定该记录是否在模型的训练数据集中。</span></p><blockquote><p><span>Pustozerova和Mayer[87]讨论了序列联邦学习环境下的隶属度推理攻击。 有希望的方法是通过在训练数据中注入一定数量的噪声或直接扰动模型参数来扭曲得到的模型。 为了获得类似的结果，在学习输出上应用差分隐私[87]。</span></p></blockquote><p><span>对模型推理攻击的防御也得到了广泛的研究，前一阶段讨论的防御策略也适用于对推理攻击的防御，如模糊模型输出的差分隐私和基于加密的掩蔽模型结构的解决方案。 此外，控制查询频率也是防止恶意查询的有效方法。 </span></p><p><span>最后的安全风险是</span><strong><span>模型剽窃</span></strong><span>。 FL模型可以部署在任何设备上，这使得它们失去了控制，容易受到各种攻击，如剽窃和误用。 作为联邦学习的一个新的研究方向，有必要对这一部分进行深入的探讨，我们在第8节详细阐述了联邦学习的具体实现。 隶属推理攻击</span></p><h2 id='联邦学习模型中的知识产权保护'><span>联邦学习模型中的知识产权保护</span></h2><p><span>防止对手在没有模型合法所有者合法许可的情况下剽窃、滥用和重新分发有价值的FL模型也是一个关键问题</span></p><h3 id='遇到的挑战'><span>遇到的挑战</span></h3><p><span>允许对有价值的模型，特别是大型深度神经网络模型进行所有权验证的机器学习方法已经通过检测嵌入到模型中的基于特征的签名[88,89]，或者验证在训练阶段注入到模型中的后门样本的指定标签[89,90]成功地证明了这一点。这些方法被采用并扩展到联邦学习环境[91，92]，在该环境中，适当地解决以下挑战，以允许每个参与者验证他们各自对全球模型的所有权和贡献。</span></p><p><span>首先，为了让每个参与者嵌入他们自己的基于特征的签名，全局联合模型必须有足够的能力嵌入一个潜在的大集合(二进制)签名，而不损害原始模型的性能。</span></p><p><span>B. W. Li, L. X. Fan, H. L. Gu, J. Li, Q. Yang. FedIPR:Ownership verification for federated deep neural networkmodels. [Online], Available: </span><a href='https://arxiv.org/abs/2109.13236' target='_blank' class='url'>https://arxiv.org/abs/2109.13236</a><span>, 2022.</span></p><blockquote><p><span>[92]的理论分析和实证研究表明，只要嵌入签名的总比特长度不超过一个与深度神经网络大小成正比的阈值，就可以在不对原始模型性能造成显著损失的情况下嵌入签名。</span></p></blockquote><p><span>此外，还应该考虑不同参与者嵌入的签名之间的潜在冲突，幸运的是，如[92]所示，这种冲突导致的所有权验证信心损失可以忽略不计。其次，为了让每个参与者嵌入他们的私有签名，联邦模型的聚合不应该暴露嵌入到单个模型中的签名。</span></p><p><span>此外，这些基于特征的签名应该以私有的方式进行验证，例如不公开特征提取矩阵等。</span></p><blockquote><p><span>[92]证明了私有嵌入和验证是可以实现的。第三，对于基于后门样本的所有权验证，必须确保参与者也应该被考虑，幸运的是，如[92]所示，这种冲突导致对所有权验证信心的损失可以忽略。其次，为了让每个参与者嵌入他们的私有签名，联邦模型的聚合不应该暴露嵌入到单个模型中的签名。</span></p></blockquote><p><span>此外，这些基于特征的签名应该以私有的方式进行验证，例如不公开特征提取矩阵等。[92]证明了私有嵌入和验证是可以实现的。</span></p><p><span>第三，对于基于后门样本的所有权验证，在提交聚合的局部模型时，必须确保后门样本的持久性。这是因为已经提出了大量的聚合端防御方法，目的是从全局模型中过滤出后门样本[62,63,93]。</span></p><p><span>Li等人[92]再次表明，采用防御性方法会导致对所有权核查信心的可忽略性损失。因此，嵌入的后门样本被证明是非常持久的。对FL模型的知识产权保护是联邦训练全生命周期中的一个重要环节。此步骤是审计过程的一部分，在审计过程中必须满足联邦模型管理的各种需求。</span></p><p><span>例如，人们可能会想，一个训练有素的生成模型是否被误用来生成虚假的图像或视频。</span></p><p><span>请注意，现有的基于区块链的方法无法解决模型性的知识产权保护问题。当一个模型由多个参与者协作构建时，该模型还没有进入任何区块链。</span></p><h3 id='基于数字水印的深度神经网络所有权保护'><span>基于数字水印的深度神经网络所有权保护</span></h3><p><span>数字水印被广泛用于保护多媒体资产的所有权,近年来深度学习的发展加速了各种科技公司将机器学习作为一种服务（MlaaS）作为商业模式之一。 因此，为了保护和鼓励创造力，提供知识产权保护是必要和迫切的。</span></p><p><span>深度模型的知识产权可以通过各种数字水印方法来保护，根据各自的工作模式可以分为两类即使用触发集的黑盒方案[90,105]和依赖于唯一可检测特征的白盒方案[88,106,107]。</span></p><p><span>水印技术的主要思想是在不影响模型性能的前提下，在模型中嵌入识别信息（即数字水印）。对于基于触发集的方法，这种水印是由特定的输入输出数据样本编码的，这些数据样本被称为触发集。 模型的所有权是通过对触发集样本的重复检测来验证的，并且由于一个无辜的模型偶然表现出相同行为的概率是指数低的。 另一方面，基于特征的方法通过精心设计的变换矩阵将指定的水印嵌入到深度神经网络的参数中。 在这种情况下，指定水印的检测验证所有权。</span></p><blockquote><p><span>首先，内田等人[88]提出以白盒方式保护dnn的所有权，即在不影响原始任务主机网络性能的情况下，将指定的水印嵌入到dnn中。</span></p><p><span>Uchida等人[88]也证明了指定水印的检测在面对各种去除攻击(包括模型微调和剪枝)时是鲁棒的。然而，他们的方法受到了限制，因为它需要访问所有相关的网络权值来提取嵌入的水印。</span></p><p><span>为了缓解白盒约束，Merrer等[108]提出了一种基于触发器集的解决方案，利用对抗样本(触发集)在CNN模型的分类输出中嵌入水印。这种方法的优点在于，它允许通过向服务API重复提交触发器集样本来远程验证指定的水印，从而不需要访问网络的内部权重参数。</span></p><p><span>之后，Adi等人[90]证明嵌入的水印可以被视为故意的后门，并在[90]中对不同场景下的性能进行了理论分析。在后续的研究中，如[106,107]，一个共同的主题是如何嵌入鲁棒水印(或指纹)，这些水印(或指纹)能够持久地抵抗各种去除攻击，包括水印覆盖、模型微调和在黑盒和白盒设置中对神经网络模型进行修剪。</span></p><p><span>更近期的著作[89,105]被提出处理另一种类型的水印攻击，即模糊攻击。</span><a href='也在图7中总结'><span>89,105</span></a><span>给出的解决方案的最独特的特征在于，问题DNN模型的推理性能要么在出示有效护照时保持不变，要么在出示有效护照时显著恶化。通过利用基于护照的方法的这一独特特性，所有权验证在消除攻击方面变得健壮，并对模糊攻击具有弹性。此外，指定的二进制签名可以同时嵌入到护照层的比例因子中，为模糊攻击提供了强大的保障和抗风险能力。</span></p></blockquote><p><span>针对生成对抗网络（Gans）的IP保护，Ong等人[109]提出了一种可行的解决方案，Lim等人[110]也证明了对递归神经网络（RNNs）的IP保护。 在这两种情况下，[108]提出的用于DNNs的通用水印框架不适用于GANs和递归神经网络(RNNs)，因为GANs的输入源可以是潜在向量或图像，而GANs的输出是合成图像而不是分类标记。 而对于RNN，输入和输出都是句子。</span></p><p><span>针对GAN类型模型的保护，Ong等人[109]提出了一种将所有权信息嵌入GAN生成器的保护框架。 在一个黑盒场景中，他们建议当给定触发输入时，诱导生成器在合成图像的指定位置输出指定的水印（参见图8）。 通过在GAN的训练中使用适当设计的正则化项，将这种特殊的行为增强到模型中。 </span></p><p><img src="https://s2.loli.net/2023/07/09/lMDAGNYFo5PfxTu.png" referrerpolicy="no-referrer" alt="image-20230709210936900"></p><p><span>在白盒方案中，Ong等人[109]建议使用修改的符号丢失[89]，其中缩放因子的符号编码有意义的安全信息，例如公司名称。 在深度卷积生成对抗网络(DCGAN)[111]、使用生成对抗网络的超分辨率(SRGAN)[112]和Cyclegan[113]三个GANS变体上成功地证明了所有权验证。</span></p><p><span>Lim等人[110]提出了一种新的RNN所有权验证方法，该方法的主要特点如下。RNN模型是以图像为输入，根据图像内容输出有意义的图像标题。 首先，采用两种不同的嵌入方法将指定的水印（或密钥）嵌入到RNN单元中。 其次，通过比较为特定输入图像设计的图像标题来验证所有权。 第三，在RNN的隐藏存储器中嵌入一个密钥，使得伪造的密钥将立即产生一个无法使用的图像字幕模型，从而导致输出质量不佳。 这种保护与[89]中护照类型的保护相同，主动防止了RNN模型的侵权。</span></p><h3 id='联邦设置下的深度神经网络所有权保护'><span>联邦设置下的深度神经网络所有权保护 </span></h3><p><span>在联邦学习中，有几个侵犯知识产权的案例。  </span></p><ul><li><p><span>首先，在训练阶段，多个客户端可以访问全局模型，因此在模型部署阶段，训练的模型可能被非法地重新分发给联邦学习系统之外的未授权方。</span></p></li><li><p><span>其次，一些搭便车者参与联邦学习仅仅是为了窃取联邦模型，他们假装参与了培训过程，但实际上并没有为FL贡献任何数据，这意味着他们侵犯了良性客户的知识产权。</span></p></li></ul><p><span>这两起侵犯知识产权案件凸显了联邦模式知识产权保护的强烈需求和动机。 在这种情况下，针对FL的几种水印方法来弥补上述漏洞。</span></p><p><span>最近提出了一种保护FL模型的Waffle[91]水印方案，该方案假设可信的中心服务器是FL模型的所有者，而客户端对联合训练的联邦模型没有所有权。 Waffle方法在服务器端引入了模型重新训练步骤，服务器端在聚合模型中嵌入基于后门的水印[90]。 在所有权验证阶段，中心服务器通过黑盒访问带有指定水印的训练模型来声明所有权。</span></p><p><span>Li等人[92]在一个更一般的半诚实FL环境下考虑了FL的知识产权保护问题，提出了Fedipr签名/水印嵌入方案。 在Fedipr中，每一方都是联邦学习模型的所有者，在训练阶段，每一方都保留自己的秘密水印，并在客户端将秘密水印嵌入到局部模型中，然后将局部模型聚合为全局模型。 在验证阶段，各方可以通过寻找嵌入在全局模型中的自己的水印来验证全局模型的所有权。 注意，这个验证过程对每一方都是保密的，并且独立于其他方的水印。 这样，FL之外的未授权方就不能声称联邦学习模型的所有权。 而且，在训练过程中没有嵌入水印的搭便车者不能主张全局模型的合法权利。这种Fedipr设置相当具有挑战性，因为客户端的签名嵌入过程必须保密，全局模型需要有足够的容量同时嵌入各方的水印。 在技术方面，Li等人[92]提出了基于后门的水印和基于特征的水印，具体来说，他们提出了对抗性样本作为基于后门的水印嵌入局部模型，并采用秘密矩阵将基于特征的签名嵌入批范数层。 在验证阶段，各方可以独立验证全球模型的所有权。 Fedipr为客户端秘密水印的容量提供了理论依据，并在卷积网络和基于转换器的结构下对Fedipr在图像分类任务和自然语言推理任务中的性能进行了评估。 联邦学习框架的工程师或研究人员可能会从模型IP保护中受益。 这一点至关重要，因为DNN的开发需要大量的资金、数据和计算资源。 IP保护方法将鼓励DNN模型的创新，保护模型所有者的合法权利，即使在最坏的情况下攻击者也可以在没有所有者承认的情况下访问模型。</span></p><h3 id='ipr-research-direction知识产权研究方向'><span>IPR research direction知识产权研究方向 </span></h3><p><span>模型知识产权保护是安全联邦学习中的一个开放问题，挑战来自以下几个方面：</span></p><h4 id='1watermarking-protocols-水印协议'><span>1.Watermarking protocols 水印协议</span></h4><p><span>设计安全可信的联邦学习模型保护协议是必要的，提出了模型服务器负责水印嵌入，只有服务器才能验证模型的所有权的方案[91],而Li等人[92]提出每个客户端都可以嵌入私有水印，并在不向其他方泄露水印信息的情况下声明模型的所有权。 我们认为，所有权验证协议与更多的安全机制相结合是可信和安全验证的迫切需要。</span></p><h4 id='2watermarking-embedding-methods-水印嵌入方法'><span>2.Watermarking embedding methods 水印嵌入方法</span></h4><p><span>以前的联邦模型水印方法可以分为基于特征的方法[88，90-92]和基于后门的方法[109，110]。</span></p><ul><li><p><span>基于特征的水印需要通过白盒访问模型参数来提取，这在实际应用中是不现实的。 </span></p></li><li><p><span>基于后门的水印方法与后门学习密切相关，后门学习是一个重要的研究方向，可以推动更多的相关研究。 特别是在联邦学习中，在同一个全局模型中可以嵌入多少私有水印还有待研究。</span></p></li></ul><h4 id='3watermark-robustness水印鲁棒性'><span>3.Watermark robustness水印鲁棒性</span></h4><p><span>联邦模型水印的另一个重要挑战是鲁棒性。</span></p><ul><li><p><span>一方面，为了数据的安全，采用了各种训练策略，如差分隐私、同态加密和安全聚合等[52,54-55,65,66]，这些策略修改了训练过程，从而可以去除水印； 另一方面，模型敌手可以应用移除攻击</span></p></li><li><p><span>另一方面，模型敌手可以应用移除攻击或模型提取攻击来移除水印[114-116]。</span></p></li></ul><p><span> 结合这两种风险，水印的鲁棒性是联邦模型IP保护的一个关键问题。 一般说来，在将联邦学习应用到实践中时，模型IP保护是一个不可忽视的问题。 算法和协议将是联邦模型IP保护研究的核心。</span></p><h3 id='联邦学习的开源框架'><span>联邦学习的开源框架</span></h3><p><span>从头开始开发一个联邦学习框架是非常耗时的，尤其是在工业领域。 一个优秀的FL框架可以方便工程师和研究人员在实践中训练、研究和部署FL模型。 在本节中，我们总结了表2中一些常用的开源框架。 </span></p><p><span> 除此之外，其他著名的FL框架包括FedML[126,127]、FedLearner[128]、Flower[129]、Paddlefl[130]、Powerfl[131]、Leaf[132]、Sherpa.ai[133]、PyVertice[134]。</span></p><p><img src="https://s2.loli.net/2023/07/09/6HNmVjC9zorxcYb.png" referrerpolicy="no-referrer" alt="image-20230709215920677"></p><h2 id='总结'><span>总结</span></h2><p><span>隐私保护计算(PPC)是目前工业界和学术界都非常活跃和有影响力的研究领域之一。 作为PPC的前沿研究方向，FL近年来受到了相当大的关注。 本文对SFL的关键组成部分进行了全面的综述，包括定义、体系结构设计和FL面临的威胁模型。 此外，我们希望本文中所阐述的IP保护观点将导致更多FL设置中的模型IP保护。 我们相信，安全联邦学习将为开发大规模AI系统带来新的思维模式和工具箱，并有助于解决阻碍SFL在更多用例中广泛应用的开放问题，如安全和合法的数据交换、数据短缺和实践中的数据孤岛。</span></p></div></div>
+</body>
+</html>
